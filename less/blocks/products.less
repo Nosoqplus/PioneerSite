@@ -1,0 +1,45 @@
+// main: "../style.less"
+
+/* PRODUCTS =====================================================================================
+==================================================================================================*/
+
+
+.products__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 435px;
+    gap: 20px;
+    row-gap: 25px;
+}
+.products__item {
+    background-color: var(--light-gray);
+
+    .padding(32px, 24px, 32px, 24px);
+
+    width: 100%;
+    height: 100%;
+
+    .flex(column, space-between, left, 20px);
+}
+
+.products__item-img {
+    max-width: 200px;
+}
+
+.products__links-container{
+    .flex(column, space-between, left, 12px);
+}
+.products__item-link {
+    color: var(--dark);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    
+}
+.products__details-link {
+    .flex(row, start, center, 8px);   
+
+    font-size: 20px;
+    line-height: 1.2;
+}

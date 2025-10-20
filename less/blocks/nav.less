@@ -1,0 +1,57 @@
+// main: "../style.less"
+
+/* NAVBAR =====================================================================================
+==================================================================================================*/
+
+
+.navbar__row{
+    .flex(row, space-between, center, 20px);
+    
+}
+
+.navbar__row--top{
+    .padding(35px, 0, 35px, 0);
+    border-bottom: 1px solid var(--gray);
+}
+
+.navbar__column{
+    .flex(row, space-between, center, 40px);
+}
+
+.navbar__info-container{
+    text-align: end;
+}
+
+.navbar__info-title{
+    font-size: 14px;
+}
+
+.navbar__info{
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar__info--underlined{
+    text-decoration: underline;
+}
+
+.navbar__row--bottom {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.navbar__link-container {
+    .flex(row, space-between, center, 44px);
+}
+
+.navbar__link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--dark);
+    
+    .link_animations(color 0.05s linear, lighten(@dark, 20%), lighten(@dark, 50%));
+}
+.navbar__callback-btn {
+    .flex(row, space-between, center, 2px);
+    text-transform: uppercase;
+}

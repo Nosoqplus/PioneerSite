@@ -1,0 +1,46 @@
+// main: "../style.less"
+
+/* FOOTER =====================================================================================
+==================================================================================================*/
+
+@footer-columns-gap: 20px;
+
+.footer {
+    background-color: var(--dark);
+}
+.footer__flex {
+    padding-top: 56px;
+    .flex(row, space-between, stretch, 0px);
+}
+.footer__column {
+    width: calc(16.6% - @footer-columns-gap);
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 240px;
+
+    & + &{
+        // background-color: red;
+        padding-right: @footer-columns-gap;
+    }
+}
+
+.footer__column--lg{
+    width: calc(50% - @footer-columns-gap);
+}
+
+
+.footer__links-container {
+    .flex(column, start, start, 24px);
+}
+.footer__link {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.2;
+}
+.footer_copyright {
+    color: var(--white);
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+}

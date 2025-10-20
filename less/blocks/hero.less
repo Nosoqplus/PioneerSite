@@ -1,0 +1,39 @@
+// main: "../style.less"
+
+/* HERO =====================================================================================
+==================================================================================================*/
+
+.hero{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.hero__grid{
+    @gap: 20px;
+    @columns: 2;
+
+    // .grid(repeat(2, calc( 50% - calc (var(--gap) / 2) ) ), 1fr 3fr, var(--gap), 0px);
+    .grid(repeat(@columns, calc(50% - (@gap / @columns))), 1fr max-content, @gap, 0px);
+}
+
+.hero__title {
+    padding-bottom: 32px;
+}
+.hero__paragraph {
+    padding-top: 26px;
+    max-width: 65%;
+}
+.hero__img-container {
+    width: 100%;
+    height: 100%;
+
+    grid-column: span 2;
+}
+.hero__img {
+    height: 100%;
+    max-height: 440px;
+
+    object-fit: cover;
+
+}
+

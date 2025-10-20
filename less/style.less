@@ -1,0 +1,51 @@
+// out: "../style.css"
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import "_variables.less";
+@import '_mixins.less';
+
+
+*::after, *::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+a{
+    color: var(--accent);
+    text-decoration: none;
+
+    .link_animations(color 0.05s linear, lighten(@accent, 10%), lighten(@accent, 20%))
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container--regular{
+    padding-top: 33.7px;
+    padding-bottom: 40px;
+}
+
+/*MAIN STYLES =====================================================================================
+==================================================================================================*/
+
+@import './blocks/typography.less';
+@import './blocks/nav.less';
+@import './blocks/logo.less';
+@import './blocks/hero.less';
+@import './blocks/about.less';
+@import './blocks/products.less';
+@import './blocks/representation.less';
+@import './blocks/news.less';
+@import './blocks/footer.less';

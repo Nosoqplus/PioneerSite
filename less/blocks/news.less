@@ -1,0 +1,52 @@
+// main: "../style.less"
+
+/* NEWS=====================================================================================
+==================================================================================================*/
+
+
+.news{
+    padding-bottom: 80px;
+}
+
+.news_grid {
+    .grid(1fr 1fr 1fr, 478px, 20px, 25px);
+
+}
+.news__item {
+    background-color: var(--light-gray);
+    .flex(column, start, start, 0px);
+}
+.news__text-container{
+    height: 100%;
+    
+    .flex(column, space-between, start, 20px);
+    .padding(16px, 16px, 25px, 16px);
+}
+
+.news__img {
+    width: 100%;
+}
+
+.news__item-row{
+    width: 100%;
+    .flex(row, space-between, center, 10px);
+}
+
+.news__description{
+    color: var(--dark);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.news__read-more {
+    font-size: 16px;;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.news__date {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--gray);
+}
