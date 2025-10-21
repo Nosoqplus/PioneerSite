@@ -34,3 +34,10 @@
     object-fit: cover;
     max-height: 280px;
 }
+
+@media screen and (max-width: @breakpoint-phone-lg) {
+    .about__grid{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}

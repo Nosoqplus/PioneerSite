@@ -44,3 +44,50 @@
     font-size: 14px;
     line-height: 1.2;
 }
+
+@media screen and (max-width: @breakpoint-tablet-lg) {
+    .footer__column{
+        width: 20%;
+    }
+    
+    .footer__column--lg{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+    .footer__flex{
+        flex-direction: column;
+    }
+    
+    .footer__links-container{
+        align-items: center;
+    }
+
+    .footer__link{
+        font-size: clamp(16px, 6vw, 30px);
+    }
+    .footer__column{
+        width: 100%;
+        text-align: center;
+        min-height: 0px;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-right: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        & + &{
+        // background-color: red;
+        padding-right: 0;
+        }
+    }
+    
+    .footer__column--lg{
+        width: 100%;
+        display: none;
+    }
+
+    .footer__flex{
+        padding-top: 10px;
+    }
+}

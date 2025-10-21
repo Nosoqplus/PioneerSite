@@ -55,3 +55,43 @@
     .flex(row, space-between, center, 2px);
     text-transform: uppercase;
 }
+
+@media screen and (max-width: @breakpoint-pc-half) {
+    .navbar__link-container{
+        gap: clamp(5px, 2vw, 20px);
+    }
+}
+
+@media screen and (max-width: @breakpoint-tablet-lg) {
+    .navbar__callback-btn{
+        display: none;
+    }
+    .navbar__link-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+    .navbar__row--bottom{
+        display: none;
+    }
+}
+
+@media screen and (max-width: @breakpoint-phone-lg) {
+    .navbar__column{
+        gap: 10px;
+    }
+
+    .navbar__info-title{
+        font-size: 10px;
+    }
+
+    .navbar__info{
+        font-size: 14px;
+    }
+    
+    .navbar__info-container:first-of-type{
+        display: none;
+    }
+}
